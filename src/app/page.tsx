@@ -70,21 +70,21 @@ export default function Home() {
     { 
       id: 'glassmorphism', 
       name: 'Glassmorphism / Liquid Glass', 
-      status: 'Queued',
+      status: 'Ready',
       vibe: 'Frosted Refraction & Modern Apple',
       desc: 'Multi-layered blurred backdrops, refractive edge highlights, ambient lighting, translucent depth.' 
     },
     { 
       id: 'flat', 
       name: 'Flat Design 2.0', 
-      status: 'Queued',
+      status: 'Ready',
       vibe: 'Swiss Precision Grid',
       desc: 'Solid bold colors, crisp mathematical typography, zero artificial depth, pure communicative clarity.' 
     },
     { 
       id: 'minimal', 
       name: 'Minimalism', 
-      status: 'Queued',
+      status: 'Ready',
       vibe: 'Monochrome Negative Space',
       desc: 'Expansive white/dark voids, whisper-quiet typography, high editorial discipline, single accent element.' 
     },
@@ -132,7 +132,7 @@ export default function Home() {
           <div className="flex items-center justify-between border-b-2 border-neutral-900 pb-3">
             <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight">Style Laboratory</h2>
             <span className="text-xs font-bold bg-neutral-900 text-white px-3 py-1 rounded-full">
-              9 of 13 Styles Live &amp; Ready
+              12 of 13 Styles Live &amp; Ready
             </span>
           </div>
           <p className="text-neutral-600 text-sm md:text-base">
