@@ -49,23 +49,23 @@ export default function Home() {
     { 
       id: 'skeuomorphism', 
       name: 'Skeuomorphism', 
-      status: 'Queued',
-      vibe: 'Physical Law Office Metaphor',
-      desc: 'Leather-bound case files, polished mahogany desk, brass paperclips, physical stamped seals, warm lamps.' 
+      status: 'Ready',
+      vibe: 'Physical Law Chambers Metaphor',
+      desc: 'Leather-bound case files, mahogany desk, brass paperclips, physical red wax seals, warm ambient lamps.' 
     },
     { 
       id: 'claymorphism', 
       name: 'Claymorphism', 
-      status: 'Queued',
+      status: 'Ready',
       vibe: 'Puffy 3D Play-Doh UI',
-      desc: 'Double inner shadows, exaggerated border radii, floating soft-pill buttons, pastel depth.' 
+      desc: 'Double inner shadows, exaggerated border radii, floating soft-pill buttons, pastel squishy depth.' 
     },
     { 
       id: 'neumorphism', 
       name: 'Neumorphism', 
-      status: 'Queued',
-      vibe: 'Soft Extruded Surface',
-      desc: 'Continuous tactile surface with paired soft highlights and drop-shadows; inset pressed states.' 
+      status: 'Ready',
+      vibe: 'Soft Continuous Extrusion',
+      desc: 'Monochromatic architectural surface with paired soft highlights and drop-shadows; recessed states.' 
     },
     { 
       id: 'glassmorphism', 
@@ -132,7 +132,7 @@ export default function Home() {
           <div className="flex items-center justify-between border-b-2 border-neutral-900 pb-3">
             <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight">Style Laboratory</h2>
             <span className="text-xs font-bold bg-neutral-900 text-white px-3 py-1 rounded-full">
-              6 of 13 Styles Live &amp; Ready
+              9 of 13 Styles Live &amp; Ready
             </span>
           </div>
           <p className="text-neutral-600 text-sm md:text-base">
