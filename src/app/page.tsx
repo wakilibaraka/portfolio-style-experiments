@@ -91,7 +91,7 @@ export default function Home() {
     { 
       id: 'wabi-sabi', 
       name: 'Wabi-Sabi', 
-      status: 'Queued',
+      status: 'Ready',
       vibe: 'Imperfect Organic Elegance',
       desc: 'Natural earth pigments, handmade Japanese washi textures, asymmetrical balance, weathered organic warmth.' 
     },
@@ -131,49 +131,40 @@ export default function Home() {
         <section className="space-y-3">
           <div className="flex items-center justify-between border-b-2 border-neutral-900 pb-3">
             <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight">Style Laboratory</h2>
-            <span className="text-xs font-bold bg-neutral-900 text-white px-3 py-1 rounded-full">
-              12 of 13 Styles Live &amp; Ready
+            <span className="text-xs font-bold bg-emerald-600 text-white px-3.5 py-1 rounded-full shadow-sm">
+              All 13 of 13 Styles Live &amp; Ready
             </span>
           </div>
           <p className="text-neutral-600 text-sm md:text-base">
-            Each route represents a completely distinct visual philosophy—from raw chaotic retro experiments to high-craft tactile collage and serene minimalist architecture. Click any ready experiment below to view Emmanuel&apos;s portfolio in that vibe:
+            All 13 visual aesthetics have been designed, tested, and deployed for Emmanuel Baraka Ongau. Click any card below to launch that complete interactive portfolio edition:
           </p>
         </section>
 
         {/* Styles Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {styles.map((style, idx) => {
-            const isReady = style.status === 'Ready';
-            return (
-              <Link 
-                key={style.id} 
-                href={isReady ? `/${style.id}` : '#'}
-                className={`group block p-6 rounded-xl border-2 transition-all duration-200 ${
-                  isReady 
-                    ? 'bg-white border-neutral-900 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-0.5 cursor-pointer' 
-                    : 'bg-neutral-100/70 border-neutral-300 opacity-60 cursor-not-allowed'
-                }`}
-              >
-                <div className="flex items-center justify-between text-xs font-bold mb-3">
-                  <span className="text-neutral-400">#{idx + 1}</span>
-                  <span className={`px-2 py-0.5 rounded-full ${
-                    isReady ? 'bg-emerald-100 text-emerald-800 border border-emerald-300' : 'bg-neutral-200 text-neutral-600'
-                  }`}>
-                    {style.status}
-                  </span>
-                </div>
-                <h3 className={`text-xl font-bold mb-1 ${isReady ? 'group-hover:text-blue-700' : 'text-neutral-700'}`}>
-                  {style.name}
-                </h3>
-                <div className="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-2">
-                  {style.vibe}
-                </div>
-                <p className="text-sm text-neutral-600 leading-snug">
-                  {style.desc}
-                </p>
-              </Link>
-            );
-          })}
+          {styles.map((style, idx) => (
+            <Link 
+              key={style.id} 
+              href={`/${style.id}`}
+              className="group block p-6 rounded-xl border-2 bg-white border-neutral-900 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-0.5 cursor-pointer transition-all duration-200"
+            >
+              <div className="flex items-center justify-between text-xs font-bold mb-3">
+                <span className="text-neutral-400">#{idx + 1}</span>
+                <span className="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300">
+                  {style.status}
+                </span>
+              </div>
+              <h3 className="text-xl font-bold mb-1 group-hover:text-blue-700">
+                {style.name}
+              </h3>
+              <div className="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-2">
+                {style.vibe}
+              </div>
+              <p className="text-sm text-neutral-600 leading-snug">
+                {style.desc}
+              </p>
+            </Link>
+          ))}
         </div>
       </div>
     </div>
