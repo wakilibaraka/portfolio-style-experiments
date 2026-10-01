@@ -28,21 +28,21 @@ export default function Home() {
     { 
       id: 'neobrutalism', 
       name: 'Neobrutalism', 
-      status: 'Queued',
+      status: 'Ready',
       vibe: 'Bold High-Contrast Pop',
       desc: 'Thick black 4px outlines, saturated yellow/cyan blocks, hard offset shadows, high-energy typography.' 
     },
     { 
       id: 'y2k', 
       name: 'Y2K Digital Aesthetic', 
-      status: 'Queued',
+      status: 'Ready',
       vibe: 'Cyber-Chrome Millennial',
       desc: 'Liquid chrome textures, metallic sheen, glossy translucent buttons, iridescent blue-silver matrix.' 
     },
     { 
       id: 'aero', 
       name: 'Frutiger Aero / Aqua', 
-      status: 'Queued',
+      status: 'Ready',
       vibe: 'Glossy Skeuo-Futurism',
       desc: 'Aqua bubbles, sky-blue gradients, glossy glass sheen, nature-meets-tech aesthetic of early 2000s OSes.' 
     },
@@ -132,7 +132,7 @@ export default function Home() {
           <div className="flex items-center justify-between border-b-2 border-neutral-900 pb-3">
             <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight">Style Laboratory</h2>
             <span className="text-xs font-bold bg-neutral-900 text-white px-3 py-1 rounded-full">
-              Testing Different Animated Aesthetics
+              6 of 13 Styles Live &amp; Ready
             </span>
           </div>
           <p className="text-neutral-600 text-sm md:text-base">
